@@ -71,14 +71,14 @@ function WhatIDo() {
         <div ref={ref} className="bg-slate-50 rounded-lg drop-shadow-lg p-4 md:pb-14 md:p-6 my-6 w-full flex flex-col items-center">
             <motion.p
                 whileHover={{ scale: 1.02, cursor: 'pointer' }}
-                animate={pAnimate}
+                // animate={pAnimate}
                 className="mb-6 font-semibold text-start w-full relative before:absolute before:rounded-lg before:content before:w-20 before:h-1 before:-bottom-2 before:left-0 before:bg-secondary">What I Do</motion.p>
             <motion.div
                 className="w-[90%] m-auto grid md:grid-cols-3 gap-4 md:gap-6">
                 <motion.div
                     whileHover={{ scale: 1.04, cursor: 'pointer' }}
                     whileTap={{ scale: 1.05 }}
-                    animate={animation}
+                    // animate={animation}
                     className="flex flex-col items-center gap-2 drop-shadow-md text-center">
                     <img className="w-[60%]" src={do1} alt="img" />
                     <p className="text-xs md:text-md text-zinc-500 ">Development many technologies, using libraries and other support materials</p>
@@ -87,7 +87,7 @@ function WhatIDo() {
                 <motion.div
                     whileHover={{ scale: 1.04, cursor: 'pointer' }}
                     whileTap={{ scale: 1.05 }}
-                    animate={animation2}
+                    // animate={animation2}
                     className="flex flex-col items-center gap-2 text-center drop-shadow-md">
                     <img className="w-[60%]" src={do2} alt="img" />
                     <p className="text-xs md:text-md text-zinc-500">I make responsive web applications with good practices</p>
@@ -95,7 +95,7 @@ function WhatIDo() {
                 <motion.div
                     whileHover={{ scale: 1.04, cursor: 'pointer' }}
                     whileTap={{ scale: 1.05 }}
-                    animate={animation3}
+                    // animate={animation3}
                     className="flex flex-col items-center gap-2 drop-shadow-md text-center">
                     <img className="w-[60%]" src={do3} alt="img" />
                     <p className="text-xs md:text-md text-zinc-500">Always thinking about improving my skills to be better and better.</p>

@@ -59,18 +59,16 @@ function Stack() {
 
     }, [inView])
 
-
-
     return (
         <div ref={ref} className="bg-slate-50 rounded-lg drop-shadow-lg p-4 md:p-6  my-6">
 
             <motion.p
                 whileHover={{ scale: 1.02, cursor: 'pointer' }}
-                animate={titleAnimation}
+                // animate={titleAnimation}
                 className="relative before:w-12 before:h-1 before:bg-secondary before:absolute before:-bottom-1 before:rounded-lg font-semibold">Stack</motion.p>
 
             <motion.div
-                animate={cardAnimation}
+                // animate={cardAnimation}
                 className="grid grid-cols-2 md:grid-cols-8 content-center justify-items-center gap-4 md:gap-2 my-6 drop-shadow-md">
                 <motion.div
                     whileHover={{ scale: 1.2, cursor: 'pointer' }}

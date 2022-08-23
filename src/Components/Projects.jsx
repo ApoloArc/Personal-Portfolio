@@ -46,10 +46,10 @@ function Projects() {
             className="bg-slate-50 drop-shadow-lg rounded-lg p-4 md:p-6">
             <motion.h1
                 whileHover={{ scale: 1.04 }}
-                animate={animation}
+                // animate={animation}
                 className="font-bold relative before:absolute before:content  before:h-1 before:w-20 before:bg-secondary before:-bottom-2 before:rounded-lg before:left-0">Portfolio</motion.h1>
             <motion.div
-                animate={animation}
+                // animate={animation}
                 className="my-6 grid grid-cols-1 drop-shadow-md md:grid-cols-4 gap-2 md:gap-5">
                 <motion.a
                     whileHover={{ scale: 1.04 }}
