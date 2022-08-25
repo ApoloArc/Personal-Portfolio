@@ -36,7 +36,7 @@ function HeroContainer() {
                         // initial={{ opacity: 0, scale: 0.5 }}
                         // animate={{ opacity: 1, scale: 1 }}
                         // transition={{ delay: 1.1, type: "spring", bounce: 0.3 }}
-                        className="text-sm hidden md:block">Actually searching job</motion.p>
+                        className="text-sm hidden md:block">Currently searching for a job</motion.p>
                     <div className="mt-5 flex gap-2">
                         <motion.a
                             whileHover={{ scale: 1.05 }}
