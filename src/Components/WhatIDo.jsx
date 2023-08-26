@@ -68,7 +68,7 @@ function WhatIDo() {
     }, [inView])
 
     return (
-        <div ref={ref} className="bg-slate-50 rounded-lg drop-shadow-lg p-4 md:pb-14 md:p-6 my-6 w-full flex flex-col items-center">
+        <div ref={ref} className="bg-slate-50 text-zinc-500 dark:bg-slate-800 dark:text-white rounded-lg drop-shadow-lg p-4 md:pb-14 md:p-6 my-6 w-full flex flex-col items-center">
             <motion.p
                 whileHover={{ scale: 1.02, cursor: 'pointer' }}
                 // animate={pAnimate}
@@ -81,7 +81,7 @@ function WhatIDo() {
                     // animate={animation}
                     className="flex flex-col items-center gap-2 drop-shadow-md text-center">
                     <img className="w-[60%]" src={do1} alt="img" />
-                    <p className="text-xs md:text-md text-zinc-500 ">Development many technologies, using libraries and other support materials</p>
+                    <p className="text-xs md:text-md  ">Development many technologies, using libraries and other support materials</p>
                 </motion.div>
 
                 <motion.div
@@ -90,7 +90,7 @@ function WhatIDo() {
                     // animate={animation2}
                     className="flex flex-col items-center gap-2 text-center drop-shadow-md">
                     <img className="w-[60%]" src={do2} alt="img" />
-                    <p className="text-xs md:text-md text-zinc-500">I make responsive web applications with good practices</p>
+                    <p className="text-xs md:text-md ">I make responsive web applications with good practices</p>
                 </motion.div>
                 <motion.div
                     whileHover={{ scale: 1.04, cursor: 'pointer' }}
@@ -98,7 +98,7 @@ function WhatIDo() {
                     // animate={animation3}
                     className="flex flex-col items-center gap-2 drop-shadow-md text-center">
                     <img className="w-[60%]" src={do3} alt="img" />
-                    <p className="text-xs md:text-md text-zinc-500">Always thinking about improving my skills to be better and better.</p>
+                    <p className="text-xs md:text-md">Always thinking about improving my skills to be better and better.</p>
                 </motion.div>
             </motion.div>
         </div>

@@ -6,9 +6,9 @@ module.exports = {
       'tablet': '640px',
       'laptop': '1024px',
       'desktop': '1280px',
-      colors:{
+      colors: {
         secondary: "#CE643A",
-        bg: "#F5F3F3"
+        "bg-custom-white": "#F5F3F3"
       }
     },
   },

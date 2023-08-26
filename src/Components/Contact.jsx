@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 
 function Contact() {
     return (
-        <div className="my-6 p-8 md:p-6 flex flex-col gap-4 md:flex-row items-center justify-evenly bg-slate-50 rounded-lg drop-shadow-lg">
+        <div className="dark:bg-slate-800 my-6 p-8 md:p-6 flex flex-col gap-4 md:flex-row items-center justify-evenly bg-slate-50 rounded-lg drop-shadow-lg">
             <div className="h-[50%] md:w-[60%] flex flex-col md:flex-row items-center gap-10 justify-evenly">
                 <div className="flex flex-col gap-4">
                     <motion.div
@@ -19,7 +19,7 @@ function Contact() {
                         whileTap={{ scale: 1.05 }}
                         className="flex p-2 items-center gap-2 font-semibold">
                         <BsPhone className="text-secondary text-lg" />
-                        <p className="text-[15px] md:text-md hover:text-secondary cursor-pointer">+51 923 394 756</p>
+                        <p className="text-[15px] md:text-md hover:text-secondary cursor-pointer">+51 973 893 576</p>
                     </motion.div>
 
                     <motion.div
@@ -50,7 +50,7 @@ function Contact() {
                     <motion.a
                         whileHover={{ scale: 1.04, cursor: 'pointer' }}
                         whileTap={{ scale: 1.05 }}
-                        href="https://drive.google.com/file/d/1S4QY_OqcgHKVrr6v0Zfv_AUzoZ7sWSuW/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1nt2yk8f3On8C4l-N43T4rWTP8swpOwa2/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="button bg-secondary p-3 rounded-lg drop-shadow-lg text-slate-50 hover:text-secondary hover:bg-slate-50 transition-all ease-in-out duration-100 flex items-center gap-2">

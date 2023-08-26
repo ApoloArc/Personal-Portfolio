@@ -7,6 +7,9 @@ import html from '../img/dev/html.png'
 import js from '../img/dev/js.png'
 import css from '../img/dev/css.png'
 import tailwind from '../img/dev/tailwind.png'
+import nextjs13 from "../img/dev/nextjs.svg"
+import ts from "../img/dev/ts.svg"
+import ubuntu from "../img/dev/ubuntu.svg"
 
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
@@ -60,7 +63,7 @@ function Stack() {
     }, [inView])
 
     return (
-        <div ref={ref} className="bg-slate-50 rounded-lg drop-shadow-lg p-4 md:p-6  my-6">
+        <div ref={ref} className="bg-slate-50 dark:bg-slate-800 rounded-lg drop-shadow-lg p-4 md:p-6  my-6">
 
             <motion.p
                 whileHover={{ scale: 1.02, cursor: 'pointer' }}
@@ -71,40 +74,7 @@ function Stack() {
                 // animate={cardAnimation}
                 className="grid grid-cols-2 md:grid-cols-8 content-center justify-items-center gap-4 md:gap-2 my-6 drop-shadow-md">
                 <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
-                    <div className="h-20 md:h-[70%] flex justify-center items-center">
-                        <img className="h-[70%]" src={html} alt="img" />
-                    </div>
-                    <p className="text-center font-semibold">HTML</p>
-                </motion.div>
-
-                <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
-                    <div className="h-20 md:h-[70%] flex justify-center items-center">
-                        <img className="h-[70%]" src={css} alt="img" />
-                    </div>
-                    <p className="text-center font-semibold">CSS</p>
-                </motion.div>
-
-                <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
-                    <div className="h-20 md:h-[70%] flex justify-center items-center">
-                        <img className="h-[70%]" src={js} alt="img" />
-                    </div>
-                    <p className="text-center font-semibold">Javascript</p>
-                </motion.div>
-
-
-                <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
                     <div className="h-20 md:h-[70%] flex justify-center items-center">
                         <img className="h-[70%]" src={react} alt="img" />
                     </div>
@@ -112,9 +82,22 @@ function Stack() {
                 </motion.div>
 
                 <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
+                    <div className="h-20 md:h-[70%] flex justify-center items-center">
+                        <img className="h-[70%]" src={nextjs13} alt="img" />
+                    </div>
+                    <p className="text-center font-semibold">NextJs 13</p>
+                </motion.div>
+                <motion.div
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
+                    <div className="h-20 md:h-[70%] flex justify-center items-center">
+                        <img className="h-[70%]" src={ts} alt="img" />
+                    </div>
+                    <p className="text-center font-semibold">Typescript</p>
+                </motion.div>
+
+                <motion.div
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
                     <div className="h-20 md:h-[70%] flex justify-center items-center">
                         <img className="h-[70%]" src={express} alt="img" />
                     </div>
@@ -122,9 +105,7 @@ function Stack() {
                 </motion.div>
 
                 <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
                     <div className="h-20 md:h-[70%] flex justify-center items-center">
                         <img className="h-[70%]" src={postgre} alt="img" />
                     </div>
@@ -132,9 +113,7 @@ function Stack() {
                 </motion.div>
 
                 <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
                     <div className="h-20 md:h-[70%] flex justify-center items-center">
                         <img className="h-[70%]" src={node} alt="img" />
                     </div>
@@ -142,14 +121,39 @@ function Stack() {
                 </motion.div>
 
                 <motion.div
-                    whileHover={{ scale: 1.2, cursor: 'pointer' }}
-                    whileTap={{ scale: 1.05 }}
-                    className="flex flex-col gap-12 md:gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full">
+                    className="flex flex-col gap-12 md:gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
                     <div className="h-20 md:h-[70%] flex justify-center items-center">
                         <img className="w-full md:w-[70%]" src={tailwind} alt="img" />
                     </div>
                     <p className="text-center font-semibold">Tailwind css</p>
                 </motion.div>
+
+                <motion.div
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
+                    <div className="h-20 md:h-[70%] flex justify-center items-center">
+                        <img className="h-[70%]" src={ubuntu} alt="img" />
+                    </div>
+                    <p className="text-center font-semibold">Ubuntu</p>
+                </motion.div>
+
+                {/* 
+
+                <motion.div
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
+                    <div className="h-20 md:h-[70%] flex justify-center items-center">
+                        <img className="h-[70%]" src={css} alt="img" />
+                    </div>
+                    <p className="text-center font-semibold">CSS</p>
+                </motion.div>
+
+                <motion.div
+                    className="flex flex-col gap-2 justify-center items-center p-4 border border-slate-50 rounded-lg lg:border-none lg:rounded-none w-full dark:bg-slate-200 dark:rounded-md dark:text-slate-800">
+                    <div className="h-20 md:h-[70%] flex justify-center items-center">
+                        <img className="h-[70%]" src={js} alt="img" />
+                    </div>
+                    <p className="text-center font-semibold">Javascript</p>
+                </motion.div> */}
+
             </motion.div>
         </div>
     )

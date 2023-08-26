@@ -43,7 +43,7 @@ function Projects() {
 
     return (
         <motion.div ref={ref}
-            className="bg-slate-50 drop-shadow-lg rounded-lg p-4 md:p-6">
+            className="bg-slate-50 dark:bg-slate-800 drop-shadow-lg rounded-lg p-4 md:p-6">
             <motion.h1
                 whileHover={{ scale: 1.04 }}
                 // animate={animation}
@@ -51,6 +51,14 @@ function Projects() {
             <motion.div
                 // animate={animation}
                 className="my-6 grid grid-cols-1 drop-shadow-md md:grid-cols-4 gap-2 md:gap-5">
+                <motion.a
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.9 }}
+                    href="https://miembro.tr4iner.com/" target="_blank" rel="noopener noreferrer" className="cursor-pointer p-4 border border-slate-200  drop-shadow-xs rounded-lg h-60 w-full flex flex-col items-center gap-3 justify-evenly">
+                    <img className="h-[60%] rounded-lg m-auto" src={p5} alt="img" />
+                    <p className="flex items-center h-[40%] text-center text-base font-bold m-0">Tr4iner</p>
+                    <p className="h-[20%] m-0 text-xs text-gray-400">Fitness Web App</p>
+                </motion.a>
                 <motion.a
                     whileHover={{ scale: 1.04 }}
                     whileTap={{ scale: 0.9 }}
@@ -64,8 +72,8 @@ function Projects() {
                     whileTap={{ scale: 0.9 }}
                     href="https://apoloarc.github.io/Primer-proyecto/" target="_blank" rel="noopener noreferrer" className="cursor-pointer p-4 border border-slate-200  drop-shadow-xs rounded-lg h-60 w-full flex flex-col items-center gap-3 justify-evenly">
                     <img className="h-[60%] rounded-lg m-auto" src={p2} alt="img" />
-                    <p className="flex items-center  h-[40%] text-center text-base font-bold m-0">Bigs New Today</p>
-                    <p className="h-[20%] m-0 text-xs text-gray-400">Newsletter</p>
+                    <p className="flex items-center  h-[40%] text-center text-base font-bold m-0">Cars Hub</p>
+                    <p className="h-[20%] m-0 text-xs text-gray-400">Rent Cars App</p>
                 </motion.a>
                 <motion.a
                     whileHover={{ scale: 1.04 }}
@@ -82,14 +90,6 @@ function Projects() {
                     <img className="h-[60%] rounded-lg m-auto" src={p4} alt="img" />
                     <p className="flex items-center h-[40%] text-center text-base font-bold m-0">Black Grade</p>
                     <p className="h-[20%] m-0 text-xs text-gray-400">Clothes Shop</p>
-                </motion.a>
-                <motion.a
-                    whileHover={{ scale: 1.04 }}
-                    whileTap={{ scale: 0.9 }}
-                    href="https://apoloarc.github.io/Giphy-App/" target="_blank" rel="noopener noreferrer" className="cursor-pointer p-4 border border-slate-200  drop-shadow-xs rounded-lg h-60 w-full flex flex-col items-center gap-3 justify-evenly">
-                    <img className="h-[60%] rounded-lg m-auto" src={p5} alt="img" />
-                    <p className="flex items-center h-[40%] text-center text-base font-bold m-0">Gif Expert App</p>
-                    <p className="h-[20%] m-0 text-xs text-gray-400">Search Gif</p>
                 </motion.a>
                 <motion.a
                     whileHover={{ scale: 1.04 }}
